@@ -14,49 +14,49 @@
     "steps": [
         {
             "step": "installTheme",
-            "themeZipFile": {
+            "themeData": {
                 "resource": "wordpress.org/themes",
                 "slug": "blocksy"
             }
         },
         {
             "step": "installPlugin",
-            "pluginZipFile": {
+            "pluginData": {
                 "resource": "wordpress.org/plugins",
                 "slug": "blockera"
             }
         },
         {
             "step": "installPlugin",
-            "pluginZipFile": {
+            "pluginData": {
                 "resource": "wordpress.org/plugins",
                 "slug": "fluentform"
             }
         },
         {
             "step": "installPlugin",
-            "pluginZipFile": {
+            "pluginData": {
                 "resource": "wordpress.org/plugins",
                 "slug": "all-in-one-wp-migration"
             }
         },
         {
             "step": "installPlugin",
-            "pluginZipFile": {
+            "pluginData": {
                 "resource": "wordpress.org/plugins",
                 "slug": "admin-site-enhancements"
             }
         },
         {
             "step": "installPlugin",
-            "pluginZipFile": {
+            "pluginData": {
                 "resource": "wordpress.org/plugins",
                 "slug": "slim-seo"
             }
         },
         {
             "step": "installPlugin",
-            "pluginZipFile": {
+            "pluginData": {
                 "resource": "wordpress.org/plugins",
                 "slug": "google-site-kit"
             }
