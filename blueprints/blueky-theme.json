@@ -15,7 +15,14 @@
             "step": "installPlugin",
             "pluginZipFile": {
                 "resource": "wordpress.org/plugins",
-                "slug": "hello-dolly"
+                "slug": "blockera"
+            }
+        },
+        {
+            "step": "installPlugin",
+            "pluginZipFile": {
+                "resource": "wordpress.org/plugins",
+                "slug": "fluentform"
             }
         }
     ]
