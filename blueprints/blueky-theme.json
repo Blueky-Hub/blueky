@@ -13,53 +13,71 @@
     },
     "steps": [
         {
-            "step": "themeData",
-            "themeZipFile": {
+            "step": "installTheme",
+            "themeData": {
                 "resource": "wordpress.org/themes",
                 "slug": "blocksy"
             }
         },
         {
-            "step": "pluginData",
-            "pluginZipFile": {
-                "resource": "wordpress.org/plugins",
-                "slug": "blockera"
-            }
+                "step": "installPlugin",
+                "pluginData": {
+                    "resource": "wordpress.org/plugins",
+                    "slug": "blockera"
+                },
+                "options": {
+                    "activate": true
+                }
         },
         {
-            "step": "pluginData",
-            "pluginZipFile": {
-                "resource": "wordpress.org/plugins",
-                "slug": "fluentform"
-            }
+                "step": "installPlugin",
+                "pluginData": {
+                    "resource": "wordpress.org/plugins",
+                    "slug": "fluentform"
+                },
+                "options": {
+                    "activate": true
+                }
         },
         {
-            "step": "pluginData",
-            "pluginZipFile": {
-                "resource": "wordpress.org/plugins",
-                "slug": "all-in-one-wp-migration"
-            }
+                "step": "installPlugin",
+                "pluginData": {
+                    "resource": "wordpress.org/plugins",
+                    "slug": "all-in-one-wp-migration"
+                },
+                "options": {
+                    "activate": true
+                }
         },
         {
-            "step": "pluginData",
-            "pluginZipFile": {
-                "resource": "wordpress.org/plugins",
-                "slug": "admin-site-enhancements"
-            }
+                "step": "installPlugin",
+                "pluginData": {
+                    "resource": "wordpress.org/plugins",
+                    "slug": "admin-site-enhancements"
+                },
+                "options": {
+                    "activate": true
+                }
         },
         {
-            "step": "pluginData",
-            "pluginZipFile": {
-                "resource": "wordpress.org/plugins",
-                "slug": "slim-seo"
-            }
+                "step": "installPlugin",
+                "pluginData": {
+                    "resource": "wordpress.org/plugins",
+                    "slug": "slim-seo"
+                },
+                "options": {
+                    "activate": true
+                }
         },
         {
-            "step": "pluginData",
-            "pluginZipFile": {
-                "resource": "wordpress.org/plugins",
-                "slug": "google-site-kit"
-            }
+                "step": "installPlugin",
+                "pluginData": {
+                    "resource": "wordpress.org/plugins",
+                    "slug": "google-site-kit"
+                },
+                "options": {
+                    "activate": true
+                }
         }
     ]
 }
