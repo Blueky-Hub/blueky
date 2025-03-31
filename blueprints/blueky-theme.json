@@ -1,9 +1,6 @@
 {
     "$schema": "https://playground.wordpress.net/blueprint-schema.json",
     "login": true,
-    "consts": {
-        "DISALLOW_FILE_MODS": true
-    },
     "siteOptions": {
         "blogname": "Blueky",
         "blogdescription": "Blueky Demo Site"
