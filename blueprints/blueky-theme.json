@@ -1,14 +1,10 @@
 {
     "$schema": "https://playground.wordpress.net/blueprint-schema.json",
-    "login": true,
-    "consts": {
-        "DISALLOW_FILE_MODS": true
-    },
-    "siteOptions": {
-        "blogname": "Blueky",
-        "blogdescription": "Blueky Demo Site"
-    },
     "steps": [
+        {
+            "step": "setSiteLanguage",
+            "language": "vi_VN"
+        },
         {
             "step": "installTheme",
             "themeZipFile": {
