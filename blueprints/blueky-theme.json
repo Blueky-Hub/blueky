@@ -8,6 +8,10 @@
         "WP_DEBUG_DISPLAY": false,
         "DISALLOW_FILE_MODS": true
     },
+    "plugins": [
+        "hello-dolly",
+        "https://raw.githubusercontent.com/adamziel/blueprints/trunk/docs/assets/hello-from-the-dashboard.zip"
+    ],
     "landingPage": "/wp-admin/index.php",
     "siteOptions": {
         "blogname": "Blueky",
