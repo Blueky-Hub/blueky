@@ -1,7 +1,7 @@
 {
-    "$schema": "https://playground.wordpress.net/blueprint-schema.json",
     "plugins": ["blocksy", "blockera", "fluentform", "all-in-one-wp-migration", "slim-seo", "google-site-kit"],
     "themes": ["blocksy"],
+    "login": true,
     "settings": {
         "blogname": "Blueky",
         "blogdescription": "Blueky Demo Site"
