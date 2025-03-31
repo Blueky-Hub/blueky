@@ -1,14 +1,5 @@
 {
     "$schema": "https://playground.wordpress.net/blueprint-schema.json",
-    "plugins": [
-        "blocksy",
-        "blockera",
-        "fluentform",
-        "all-in-one-wp-migration",
-        "admin-site-enhancements",
-        "slim-seo",
-        "google-site-kit"
-    ],
     "login": true,
     "networking": false,
     "consts": {
@@ -22,6 +13,15 @@
         "blogname": "Blueky",
         "blogdescription": "Blueky Demo Site"
     },
+    "plugins": [
+        "blocksy",
+        "blockera",
+        "fluentform",
+        "all-in-one-wp-migration",
+        "admin-site-enhancements",
+        "slim-seo",
+        "google-site-kit"
+    ],
     "steps": [
         {
             "step": "setSiteLanguage",
