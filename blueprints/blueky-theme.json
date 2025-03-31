@@ -1,83 +1,13 @@
 {
     "$schema": "https://playground.wordpress.net/blueprint-schema.json",
-    "consts": {
-        "WP_DISABLE_FATAL_ERROR_HANDLER": false,
-        "WP_DEBUG": false,
-        "WP_DEBUG_DISPLAY": false,
-        "DISALLOW_FILE_MODS": true
-    },
     "landingPage": "/wp-admin/index.php",
-    "siteOptions": {
+    "plugins": ["blocksy-companion"],
+    "themes": ["blocksy"],
+    "options": {
         "blogname": "Blueky",
         "blogdescription": "Blueky Demo Site"
     },
-    "steps": [
-        {
-            "step": "installTheme",
-            "themeData": {
-                "resource": "wordpress.org/themes",
-                "slug": "blocksy"
-            }
-        },
-        {
-                "step": "installPlugin",
-                "pluginData": {
-                    "resource": "wordpress.org/plugins",
-                    "slug": "blockera"
-                },
-                "options": {
-                    "activate": true
-                }
-        },
-        {
-                "step": "installPlugin",
-                "pluginData": {
-                    "resource": "wordpress.org/plugins",
-                    "slug": "fluentform"
-                },
-                "options": {
-                    "activate": true
-                }
-        },
-        {
-                "step": "installPlugin",
-                "pluginData": {
-                    "resource": "wordpress.org/plugins",
-                    "slug": "all-in-one-wp-migration"
-                },
-                "options": {
-                    "activate": true
-                }
-        },
-        {
-                "step": "installPlugin",
-                "pluginData": {
-                    "resource": "wordpress.org/plugins",
-                    "slug": "admin-site-enhancements"
-                },
-                "options": {
-                    "activate": true
-                }
-        },
-        {
-                "step": "installPlugin",
-                "pluginData": {
-                    "resource": "wordpress.org/plugins",
-                    "slug": "slim-seo"
-                },
-                "options": {
-                    "activate": true
-                }
-        },
-        {
-                "step": "installPlugin",
-                "pluginData": {
-                    "resource": "wordpress.org/plugins",
-                    "slug": "google-site-kit"
-                },
-                "options": {
-                    "activate": true
-                }
-        }
-    ]
+    "define": {
+        "DISALLOW_FILE_MODS": true
+    }
 }
