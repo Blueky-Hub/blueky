@@ -1,12 +1,4 @@
 {
-    "login": true,
-    "consts": {
-        "DISALLOW_FILE_MODS": true
-    },
-    "siteOptions": {
-        "blogname": "Blueky",
-        "blogdescription": "Blueky Demo Site"
-    },
     "steps": [
         {
             "step": "setSiteLanguage",
