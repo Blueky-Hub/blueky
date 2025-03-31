@@ -1,5 +1,21 @@
 {
+    "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+    "login": true,
+    "consts": {
+        "WP_DISABLE_FATAL_ERROR_HANDLER": false,
+        "WP_DEBUG": false,
+        "WP_DEBUG_DISPLAY": false,
+        "DISALLOW_FILE_MODS": true
+    },
+    "siteOptions": {
+        "blogname": "Blueky",
+        "blogdescription": "Blueky Demo Site"
+    },
     "steps": [
+        {
+            "step": "setSiteLanguage",
+            "language": "vi"
+        },
         {
             "step": "installTheme",
             "themeZipFile": {
