@@ -12,19 +12,59 @@
         "blogname": "Blueky",
         "blogdescription": "Blueky Demo Site"
     },
-    "plugins": [
-        "blocksy",
-        "blockera",
-        "fluentform",
-        "all-in-one-wp-migration",
-        "admin-site-enhancements",
-        "slim-seo",
-        "google-site-kit"
-    ],
     "steps": [
         {
             "step": "setSiteLanguage",
-            "language": "vi_VN"
+            "language": "vi"
+        },
+        {
+            "step": "installTheme",
+            "themeZipFile": {
+                "resource": "wordpress.org/themes",
+                "slug": "blocksy"
+            }
+        },
+        {
+            "step": "installPlugin",
+            "pluginZipFile": {
+                "resource": "wordpress.org/plugins",
+                "slug": "blockera"
+            }
+        },
+        {
+            "step": "installPlugin",
+            "pluginZipFile": {
+                "resource": "wordpress.org/plugins",
+                "slug": "fluentform"
+            }
+        },
+        {
+            "step": "installPlugin",
+            "pluginZipFile": {
+                "resource": "wordpress.org/plugins",
+                "slug": "all-in-one-wp-migration"
+            }
+        },
+        {
+            "step": "installPlugin",
+            "pluginZipFile": {
+                "resource": "wordpress.org/plugins",
+                "slug": "admin-site-enhancements"
+            }
+        },
+        {
+            "step": "installPlugin",
+            "pluginZipFile": {
+                "resource": "wordpress.org/plugins",
+                "slug": "slim-seo"
+            }
+        },
+        {
+            "step": "installPlugin",
+            "pluginZipFile": {
+                "resource": "wordpress.org/plugins",
+                "slug": "google-site-kit"
+            }
         }
     ]
 }
