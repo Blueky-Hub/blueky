@@ -5,8 +5,5 @@
     "settings": {
         "blogname": "Blueky",
         "blogdescription": "Blueky Demo Site"
-    },
-    "constants": {
-        "WP_DEBUG": false
     }
 }
