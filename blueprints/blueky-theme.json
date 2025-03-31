@@ -1,8 +1,18 @@
 {
-    "$schema": "https://playground.wordpress.net/blueprint-schema.json",
-    "landingPage": "/wp-admin/index.php",
-    "siteOptions": {
-        "blogname": "Blueky",
-        "blogdescription": "Blueky Demo Site"
-    }
+	"steps": [
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "coblocks"
+			}
+		},
+		{
+			"step": "installTheme",
+			"themeData": {
+				"resource": "wordpress.org/themes",
+				"slug": "pendant"
+			}
+		}
+	]
 }
