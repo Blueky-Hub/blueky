@@ -13,50 +13,50 @@
     },
     "steps": [
         {
-            "step": "installTheme",
-            "themeData": {
+            "step": "themeData",
+            "themeZipFile": {
                 "resource": "wordpress.org/themes",
                 "slug": "blocksy"
             }
         },
         {
-            "step": "installPlugin",
-            "pluginData": {
+            "step": "pluginData",
+            "pluginZipFile": {
                 "resource": "wordpress.org/plugins",
                 "slug": "blockera"
             }
         },
         {
-            "step": "installPlugin",
-            "pluginData": {
+            "step": "pluginData",
+            "pluginZipFile": {
                 "resource": "wordpress.org/plugins",
                 "slug": "fluentform"
             }
         },
         {
-            "step": "installPlugin",
-            "pluginData": {
+            "step": "pluginData",
+            "pluginZipFile": {
                 "resource": "wordpress.org/plugins",
                 "slug": "all-in-one-wp-migration"
             }
         },
         {
-            "step": "installPlugin",
-            "pluginData": {
+            "step": "pluginData",
+            "pluginZipFile": {
                 "resource": "wordpress.org/plugins",
                 "slug": "admin-site-enhancements"
             }
         },
         {
-            "step": "installPlugin",
-            "pluginData": {
+            "step": "pluginData",
+            "pluginZipFile": {
                 "resource": "wordpress.org/plugins",
                 "slug": "slim-seo"
             }
         },
         {
-            "step": "installPlugin",
-            "pluginData": {
+            "step": "pluginData",
+            "pluginZipFile": {
                 "resource": "wordpress.org/plugins",
                 "slug": "google-site-kit"
             }
