@@ -1,7 +1,6 @@
 {
     "$schema": "https://playground.wordpress.net/blueprint-schema.json",
     "login": true,
-    "networking": false,
     "consts": {
         "DISALLOW_FILE_MODS": true
     },
