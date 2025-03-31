@@ -14,10 +14,6 @@
     },
     "steps": [
         {
-            "step": "setSiteLanguage",
-            "language": "vi_VN"
-        },
-        {
             "step": "installTheme",
             "themeZipFile": {
                 "resource": "wordpress.org/themes",
