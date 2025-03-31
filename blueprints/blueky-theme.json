@@ -24,7 +24,7 @@
     "steps": [
         {
             "step": "setSiteLanguage",
-            "language": "vi"
+            "language": "vi_VN"
         }
     ]
 }
