@@ -8,7 +8,7 @@
         "admin-site-enhancements",
         "slim-seo",
         "google-site-kit"
-    ]
+    ],
     "login": true,
     "networking": false,
     "consts": {
