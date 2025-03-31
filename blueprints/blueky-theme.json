@@ -1,0 +1,22 @@
+{
+    "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+    "siteOptions": {
+        "blogname": "Blueky Blueprint"
+    },
+    "steps": [
+        {
+            "step": "installTheme",
+            "themeZipFile": {
+                "resource": "wordpress.org/themes",
+                "slug": "blocksy"
+            }
+        },
+        {
+            "step": "installPlugin",
+            "pluginZipFile": {
+                "resource": "wordpress.org/plugins",
+                "slug": "hello-dolly"
+            }
+        }
+    ]
+}
