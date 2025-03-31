@@ -3,9 +3,6 @@
     "login": true,
     "networking": false,
     "consts": {
-        "WP_DISABLE_FATAL_ERROR_HANDLER": false,
-        "WP_DEBUG": false,
-        "WP_DEBUG_DISPLAY": false,
         "DISALLOW_FILE_MODS": true
     },
     "plugins": [
