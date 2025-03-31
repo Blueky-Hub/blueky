@@ -1,6 +1,31 @@
 {
+    "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+    "login": true,
+    "networking": false,
+    "consts": {
+        "WP_DISABLE_FATAL_ERROR_HANDLER": false,
+        "WP_DEBUG": false,
+        "WP_DEBUG_DISPLAY": false,
+        "DISALLOW_FILE_MODS": true
+    },
+    "landingPage": "/wp-admin/index.php",
+    "siteOptions": {
+        "blogname": "Blueky",
+        "blogdescription": "Blueky Demo Site"
+    },
     "plugins": [
-        "hello-dolly",
-        "https://raw.githubusercontent.com/adamziel/blueprints/trunk/docs/assets/hello-from-the-dashboard.zip"
+        "blocksy",
+        "blockera",
+        "fluentform",
+        "all-in-one-wp-migration",
+        "admin-site-enhancements",
+        "slim-seo",
+        "google-site-kit"
+    ],
+    "steps": [
+        {
+            "step": "setSiteLanguage",
+            "language": "vi"
+        }
     ]
 }
