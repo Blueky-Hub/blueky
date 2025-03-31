@@ -8,6 +8,7 @@
         "WP_DEBUG_DISPLAY": false,
         "DISALLOW_FILE_MODS": true
     },
+    "landingPage": "/wp-admin/index.php",
     "siteOptions": {
         "blogname": "Blueky",
         "blogdescription": "Blueky Demo Site"
