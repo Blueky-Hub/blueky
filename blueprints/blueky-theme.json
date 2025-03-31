@@ -2,7 +2,7 @@
     "plugins": ["blocksy","blockera","fluentform","all-in-one-wp-migration","slim-seo","google-site-kit"],
     "themes": ["blocksy"],
     "login": true,
-    "settings": {
+    "siteOptions": {
         "blogname": "Blueky",
         "blogdescription": "Blueky Demo Site"
     }
