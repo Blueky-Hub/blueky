@@ -1,7 +1,6 @@
 {
     "$schema": "https://playground.wordpress.net/blueprint-schema.json",
     "login": true,
-    "networking": false,
     "consts": {
         "WP_DISABLE_FATAL_ERROR_HANDLER": false,
         "WP_DEBUG": false,
