@@ -4,11 +4,5 @@
     "siteOptions": {
         "blogname": "Blueky",
         "blogdescription": "Blueky Demo Site"
-    },
-    "steps": [
-        {
-            "step": "setSiteLanguage",
-            "language": "vi"
-        }
-    ]
+    }
 }
