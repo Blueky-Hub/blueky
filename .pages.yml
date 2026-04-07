@@ -4,16 +4,27 @@ media:
   # Lưu ý: Thêm dấu / ở cuối link
   public_url: https://cdn.jsdelivr.net/gh/Blueky-Hub/blueky@main/assets/img/
 
-collections:
-  - name: gallery
-    label: "Kho Ảnh CDN"
-    folder: content/gallery
-    extension: json
-    create: true
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: content/posts
     fields:
-      - { label: "Tên gợi nhớ", name: title, widget: string }
-      - { 
-          label: "Link CDN (Copy tại đây)", 
-          name: image_url, 
-          widget: image 
-        }
+      - name: title
+        type: string
+      - name: body
+        type: rich-text
+
+  # Thêm phần này để quản lý và copy link ảnh
+  - name: gallery
+    label: Media Gallery (Copy Link)
+    type: collection
+    path: content/gallery
+    extension: json
+    fields:
+      - name: title
+        label: Tên ảnh
+        type: string
+      - name: image_file
+        label: Chọn ảnh để lấy Link CDN
+        type: image
