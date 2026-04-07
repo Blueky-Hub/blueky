@@ -2,6 +2,7 @@ media:
   input: assets/img
   output: /images
   public_url: https://cdn.jsdelivr.net/gh//Blueky-Hub/blueky@main/public/images
+  
 collections:
   - name: gallery
     label: "Media Gallery (Copy Link)"
