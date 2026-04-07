@@ -1,0 +1,15 @@
+collections:
+  - name: gallery
+    label: "Media Gallery (Copy Link)"
+    folder: content/gallery # Nơi lưu các file thông tin ảnh
+    extension: json # Lưu dạng json cho gọn
+    create: true
+    fields:
+      - { label: "Tên ảnh", name: title, widget: string }
+      - { label: "Chọn ảnh", name: image_file, widget: image }
+      - { 
+          label: "Public URL (Copy tại đây)", 
+          name: copy_url, 
+          widget: string,
+          hint: "Sau khi chọn ảnh và Save, link CDN sẽ xuất hiện ở đây (nếu cấu hình public_url)" 
+        }
