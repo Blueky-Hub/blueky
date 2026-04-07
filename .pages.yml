@@ -1,7 +1,7 @@
 media:
   input: public/images
   output: /images
-  public_url: https://cdn.jsdelivr.net/gh/USER_NAME/REPO_NAME@main/public/images
+  public_url: https://cdn.jsdelivr.net/gh//Blueky-Hub/blueky@main/public/images
 collections:
   - name: gallery
     label: "Media Gallery (Copy Link)"
