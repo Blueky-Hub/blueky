@@ -1,22 +1,23 @@
-media:
-  input: assets/img
-  output: /assets/img
-  public_url: https://cdn.jsdelivr.net/gh/Blueky-Hub/blueky@main/assets/img/
+components:
+  cdn_picker:
+    type: object
+    label: CDN Tool
+    fields:
+      - name: url
+        label: "Link jsDelivr (Chọn ảnh xong sẽ hiện ở đây)"
+        type: image
+        # Chỉ định dùng đúng kho media 'images' đã cấu hình public_url
+        media: images
 
 content:
   - name: gallery
-    label: "Media Gallery (Lấy Link)"
+    label: Media Gallery
     type: collection
     path: content/gallery
     format: json
     fields:
       - name: title
-        label: "Tên ảnh"
         type: string
-      - name: link_finder
-        label: "Mở mục này để Copy Link"
-        type: object
-        fields:
-          - name: url
-            label: "Link CDN của bạn"
-            type: image
+      - name: media_asset
+        label: "Quản lý ảnh"
+        component: cdn_picker
