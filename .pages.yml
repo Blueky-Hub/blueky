@@ -1,8 +1,8 @@
 collections:
   - name: gallery
     label: "Media Gallery (Copy Link)"
-    folder: content/gallery # Nơi lưu các file thông tin ảnh
-    extension: json # Lưu dạng json cho gọn
+    folder: content/gallery
+    extension: json
     create: true
     fields:
       - { label: "Tên ảnh", name: title, widget: string }
