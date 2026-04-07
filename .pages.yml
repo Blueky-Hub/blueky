@@ -1,23 +1,50 @@
+# 1. CẤU HÌNH MEDIA
+media:
+  - name: images
+    label: Images
+    input: media/images
+    output: /media/images
+    rename: safe
+    extensions: [png, jpg, webp]
+
+# 2. CẤU HÌNH COMPONENTS (Để tái sử dụng bộ lấy link)
 components:
-  cdn_picker:
+  cdn_link_tool:
     type: object
-    label: CDN Tool
+    label: "Bộ lấy link jsDelivr"
     fields:
-      - name: url
-        label: "Link jsDelivr (Chọn ảnh xong sẽ hiện ở đây)"
+      - name: prefix
+        label: "Bước 1: Copy tiền tố này"
+        type: string
+        # Đây là link gốc cố định của bạn
+        default: "https://cdn.jsdelivr.net/gh/Blueky-Hub/blueky@main/"
+      
+      - name: image_file
+        label: "Bước 2: Chọn ảnh (Đường dẫn sẽ hiện bên dưới)"
         type: image
-        # Chỉ định dùng đúng kho media 'images' đã cấu hình public_url
         media: images
 
+# 3. CẤU HÌNH CONTENT
 content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: content/posts
+    fields:
+      - name: title
+        type: string
+      - name: body
+        type: rich-text
+
   - name: gallery
-    label: Media Gallery
+    label: "Media Gallery (Copy Link)"
     type: collection
     path: content/gallery
     format: json
     fields:
       - name: title
+        label: "Tên gợi nhớ"
         type: string
-      - name: media_asset
-        label: "Quản lý ảnh"
-        component: cdn_picker
+      - name: get_link
+        label: "Công cụ lấy URL"
+        component: cdn_link_tool
