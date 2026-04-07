@@ -1,7 +1,6 @@
 media:
   input: assets/img
   output: /assets/img
-  # Lưu ý: Thêm dấu / ở cuối link
   public_url: https://cdn.jsdelivr.net/gh/Blueky-Hub/blueky@main/assets/img/
 
 content:
@@ -15,16 +14,16 @@ content:
       - name: body
         type: rich-text
 
-  # Thêm phần này để quản lý và copy link ảnh
   - name: gallery
-    label: Media Gallery (Copy Link)
+    label: "Media Gallery (Copy Link)"
     type: collection
     path: content/gallery
-    extension: json
+    # SỬA TẠI ĐÂY: Dùng format thay vì extension
+    format: json 
     fields:
       - name: title
-        label: Tên ảnh
+        label: "Tên ảnh"
         type: string
       - name: image_file
-        label: Chọn ảnh để lấy Link CDN
+        label: "Chọn ảnh để lấy Link CDN"
         type: image
