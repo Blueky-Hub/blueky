@@ -3,37 +3,20 @@ media:
   output: /assets/img
   public_url: https://cdn.jsdelivr.net/gh/Blueky-Hub/blueky@main/assets/img/
 
-# 2. CẤU HÌNH NỘI DUNG
 content:
-  # Bộ sưu tập bài viết hiện tại của bạn
-  - name: posts
-    label: Posts
-    type: collection
-    path: content/posts
-    fields:
-      - name: title
-        type: string
-      - name: body
-        type: rich-text
-    actions:
-      - name: rebuild-posts
-        label: Rebuild posts
-        scope: collection
-        workflow: pages-cms-collection-action.yml
-      - name: preview-post
-        label: Preview
-        scope: entry
-        workflow: pages-cms-entry-action.yml
   - name: gallery
-    label: "Media Gallery (Copy Link)"
+    label: "Media Gallery (Lấy Link)"
     type: collection
     path: content/gallery
-    format: json # Sử dụng format thay vì extension để tránh lỗi .md
+    format: json
     fields:
       - name: title
-        label: "Tên ảnh (Gợi nhớ)"
+        label: "Tên ảnh"
         type: string
-      - name: image_file
-        label: "Chọn ảnh & Copy Link tại đây"
-        type: image
-        description: "Sau khi chọn ảnh, đường dẫn jsDelivr sẽ tự động điền vào ô này."
+      - name: link_finder
+        label: "Mở mục này để Copy Link"
+        type: object
+        fields:
+          - name: url
+            label: "Link CDN của bạn"
+            type: image
