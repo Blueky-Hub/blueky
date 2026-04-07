@@ -6,7 +6,6 @@ components:
       - name: url
         label: "Link jsDelivr (Chọn ảnh xong sẽ hiện ở đây)"
         type: image
-        # Chỉ định dùng đúng kho media 'images' đã cấu hình public_url
         media: images
 
 content:
