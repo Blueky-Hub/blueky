@@ -18,7 +18,6 @@ content:
     label: "Media Gallery (Copy Link)"
     type: collection
     path: content/gallery
-    # SỬA TẠI ĐÂY: Dùng format thay vì extension
     format: json 
     fields:
       - name: title
