@@ -1,20 +1,22 @@
 media:
   input: assets/img
-  output: /images
-  public_url: https://cdn.jsdelivr.net/gh//Blueky-Hub/blueky@main/public/images
-  
+  output: /assets/img
+  # Sửa lỗi dư // và khớp đường dẫn với 'input'
+  public_url: https://cdn.jsdelivr.net/gh/Blueky-Hub/blueky@main/assets/img/
+
 collections:
   - name: gallery
-    label: "Media Gallery (Copy Link)"
+    label: "Thư viện ảnh CDN"
     folder: content/gallery
     extension: json
     create: true
+    # Tự động lấy tên file theo tiêu đề bạn nhập
+    slug: "{{title}}" 
     fields:
-      - { label: "Tên ảnh", name: title, widget: string }
-      - { label: "Chọn ảnh", name: image_file, widget: image }
+      - { label: "Tên ảnh (Gợi nhớ)", name: title, widget: string }
       - { 
-          label: "Public URL (Copy tại đây)", 
-          name: copy_url, 
-          widget: string,
-          hint: "Sau khi chọn ảnh và Save, link CDN sẽ xuất hiện ở đây (nếu cấu hình public_url)" 
+          label: "Chọn ảnh & Copy Link tại đây", 
+          name: image_file, 
+          widget: image,
+          hint: "Sau khi chọn ảnh, đường dẫn jsDelivr sẽ xuất hiện ngay trong ô này. Bạn chỉ cần bôi đen để copy."
         }
