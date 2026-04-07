@@ -2,7 +2,7 @@
 media:
   - name: images
     label: Images
-    input: media/images
+    input: assets/img
     output: /media/images
     rename: safe
     extensions: [png, jpg, webp]
