@@ -4,7 +4,7 @@ components:
     label: CDN Tool
     fields:
       - name: url
-        label: "Link jsDelivr (Chọn ảnh xong sẽ hiện ở đây)"
+        label: "https://cdn.jsdelivr.net/gh/Blueky-Hub/blueky@main/media/images/"
         type: image
         media: images
 
