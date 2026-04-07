@@ -6,6 +6,12 @@ media:
     output: /media/images
     rename: safe
     extensions: [png, jpg, webp]
+    fields:
+      - name: prefix
+        label: "Bước 1: Copy tiền tố này"
+        type: string
+        # Đây là link gốc cố định của bạn
+        default: "https://cdn.jsdelivr.net/gh/Blueky-Hub/blueky@main/"
 
 # 2. CẤU HÌNH COMPONENTS (Để tái sử dụng bộ lấy link)
 components:
