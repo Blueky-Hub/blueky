@@ -1,5 +1,5 @@
 media:
-  input: public/images
+  input: assets/img
   output: /images
   public_url: https://cdn.jsdelivr.net/gh//Blueky-Hub/blueky@main/public/images
 collections:
